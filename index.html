@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assets/favicon.png" type="image/x-icon">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+     <div class="mp-container">
+        <div class="song-wrapper">
+            <div class="song-section">
+                <div class="song-container">
+                    <div class="song-content">
+                      <h2>Echo</h2>
+                      <h2>Pulse</h2>
+                      <h6>Ft. a.....rman</h6>
+                    </div>
+                </div>
+            </div>        
+        </div>
+         <div class="song-info">
+           <h2 class="song-title">Little Planet(2019)</h2>
+            <div class="progress-bar-wrapper">
+            <div class="progress-bar">
+              <div class="progress"></div>
+          </div>
+        </div>
+          <div class="controls">
+            <i class="ri-volume-up-line" id="volumeIcon"></i>
+            <div class="music-control">
+                <i id="prevBtn" class="bx bx-skip-previous"></i>
+                <i id="playBtn" class="bx bx-play"></i>
+                <i id="nextBtn" class="bx bx-skip-next"></i>
+            </div>
+            <div class="song-list" id="songList">
+              <ul>
+                <li data-index="0">Moth To A Flame-Weekend</li>
+                <li data-index="1">Blessing-SoundHelix</li>
+                <li data-index="2">Heat Waves-Glass Animals</li>
+                <li data-index="3">Woman-Doja Cat</li>
+              </ul>
+            </div>
+            <i class="bx bx-list-ul" id="list"></i>
+          
+          </div>
+
+           
+          
+         </div>
+     </div>
+     <audio id="audioPlayer"></audio>
+    <script src="script.js"></script>
+    
+</body>
+</html>
